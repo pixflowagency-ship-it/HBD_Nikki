@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #101426;
+    color: #F4E9D8;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0d1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8B46A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ebd49d;
+}
+
+/* Paper and Washi Tape Details */
+.paper-texture {
+  background-color: #FAF5EE;
+  background-image: radial-gradient(#d3c5ae 0.75px, transparent 0.75px), radial-gradient(#d3c5ae 0.75px, #FAF5EE 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.scrapbook-board {
+  background-color: #241c19;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(216, 180, 106, 0.08) 0%, transparent 60%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+.washi-tape-gold {
+  background: rgba(216, 180, 106, 0.75);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  clip-path: polygon(4% 0%, 96% 0%, 100% 100%, 0% 100%);
+}
+
+.washi-tape-rose {
+  background: rgba(233, 182, 196, 0.75);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  clip-path: polygon(2% 0%, 98% 0%, 96% 100%, 4% 100%);
+}
+
+.washi-tape-kraft {
+  background: rgba(184, 143, 107, 0.75);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  clip-path: polygon(0% 0%, 100% 0%, 97% 100%, 3% 100%);
+}
+
+/* Subtle Film Grain / Star Dust */
+.stars-bg {
+  background-image: 
+    radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 100px 150px, #D8B46A, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 200px 80px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 320px 240px, #ebd49d, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 450px 180px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 600px 320px, #D8B46A, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 650px 650px;
+}
+
+/* Gold Gradient Text */
+.gold-text-shimmer {
+  background: linear-gradient(135deg, #FAF5EE 0%, #D8B46A 40%, #ebd49d 60%, #b39045 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glow effects */
+.glow-gold {
+  box-shadow: 0 0 25px rgba(216, 180, 106, 0.35);
+}
+
+.glow-candle {
+  box-shadow: 0 0 15px 3px rgba(254, 214, 0, 0.55);
+}
+
